@@ -1,0 +1,91 @@
+{
+	"name": "@dirupt/eslint-config",
+	"description": "ESLint config from DIRUPT team.",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"private": false,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/DiruptLab/eslint-config.git"
+	},
+	"bugs": {
+		"url": "https://github.com/DiruptLab/eslint-config/issues"
+	},
+	"homepage": "https://github.com/DiruptLab/eslint-config#readme",
+	"keywords": [
+		"dirupt",
+		"javascript",
+		"eslint",
+		"eslintconfig",
+		"eslint-config",
+		"prettier",
+		"prettier-config",
+		"typescript",
+		"code-quality"
+	],
+	"author": {
+		"name": "DIRUPT",
+		"email": "hello@di-rupt.com",
+		"url": "https://www.di-rupt.com"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"format": "prettier --write **/*.js",
+		"lint": "eslint ./ --ignore-path .gitignore",
+		"lint:fix": "npm run lint -- --fix",
+		"prepare": "husky install",
+		"release": "HUSKY=0 standard-version",
+		"release:minor": "HUSKY=0 standard-version --release-as minor",
+		"release:patch": "HUSKY=0 standard-version --release-as patch",
+		"release:major": "HUSKY=0 standard-version --release-as major"
+	},
+	"lint-staged": {
+		"./src/**/*.{js,jsx,ts,tsx}": [
+			"eslint ./src"
+		]
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	},
+	"standard-version": {
+		"no-verify": true,
+		"tag-prefix": "",
+		"skip": {
+			"tag": true
+		}
+	},
+	"resolutions": {
+		"eslint-plugin-react": "7.30.1",
+		"eslint-plugin-react-hooks": "4.6.0"
+	},
+	"peerDependencies": {
+		"eslint": "^7.23.0 || ^8.0.0",
+		"typescript": ">=3.3.1"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "17.1.2",
+		"@commitlint/config-conventional": "17.1.0",
+		"@starton/eslint-config-nextjs": "1.1.5",
+		"@typescript-eslint/eslint-plugin": "^5.30.6",
+		"@typescript-eslint/parser": "^5.30.6",
+		"commitizen": "4.2.5",
+		"cz-conventional-changelog": "3.3.0",
+		"eslint": "^8.19.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-jsx-a11y": "^6.5.1",
+		"eslint-plugin-react": "^7.29.4",
+		"eslint-plugin-react-hooks": "^4.5.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"husky": "8.0.1",
+		"lint-staged": "13.0.3",
+		"prettier": "^2.7.1",
+		"standard-version": "9.5.0",
+		"typescript": "4.7.4"
+	}
+}
