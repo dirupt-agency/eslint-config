@@ -293,11 +293,6 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@starton/eslint-config-nextjs@1.1.5":
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/@starton/eslint-config-nextjs/-/eslint-config-nextjs-1.1.5.tgz#fdf6420ff915d8accd72ddf409ef9ba83f393711"
-  integrity sha512-i/LmcgW+ILOjmntYgV8/8XjlVHb6ii+Yj5lxLQvdkILdr9vwpyoGyCtxinC+4Mc8+XT3Lhcd3LVIs/A2wD2HJA==
-
 "@tsconfig/node10@^1.0.7":
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/@tsconfig/node10/-/node10-1.0.9.tgz#df4907fc07a886922637b15e02d4cebc4c0021b2"
