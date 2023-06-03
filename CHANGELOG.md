@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.5](https://git.shpv.work/website/front/-/compare/1.0.4...1.0.5) (2023-06-03)
+
+
+### ✨ Features
+
+* add unused imports plugin ([1834e4c](https://git.shpv.work/website/front/-/commit/1834e4ca5fb9c716aa9655ac0d4379cee9e3f3ae))
+
+
+### 🐛 Bug Fixes
+
+* eslint config ([b6dc29e](https://git.shpv.work/website/front/-/commit/b6dc29e79427662d4ce5dbe42d36a0c32a3cb3bb))
+
 ### [1.0.4](https://git.shpv.work/website/front/-/compare/1.0.3...1.0.4) (2023-05-15)
 
 
