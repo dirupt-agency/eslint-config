@@ -78,7 +78,7 @@ module.exports = {
 		'unused-imports/no-unused-vars': [
 			'warn',
 			{ 'vars': 'all', 'varsIgnorePattern': '^_', 'args': 'after-used', 'argsIgnorePattern': '^_' }
-		]
+		],
 		'jsx-a11y/anchor-is-valid': 'off',
 		'jsx-a11y/label-has-associated-control': [
 			'error',
