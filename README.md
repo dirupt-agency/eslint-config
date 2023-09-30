@@ -6,7 +6,7 @@ You need ESLint and Prettier installed as development dependencies on your proje
 ### NPM
 1. Install ESLint and Prettier :
 	```bash
-	$ npm install --save-dev eslint prettier
+	$ npm install --save-dev @dirupt/eslint-config
 	```
 2. Install all peer dependencies (npm > v5) :
 	```bash
@@ -16,16 +16,12 @@ You need ESLint and Prettier installed as development dependencies on your proje
 ### Yarn
 1. Install ESLint and Prettier :
    ```bash
-   $ yarn add -D eslint prettier
+   $ yarn add -D @dirupt/eslint-config
    ```
-2. Install the peer dependencies tool :
+2. Install all peer dependencies (npm > v5) :
    ```bash
-   $ yarn global add install-peerdeps
+   $ npx install-peerdeps --dev @dirupt/eslint-config
    ```
-3. 
-	```bash
- 	$ install-peerdeps @dirupt/eslint-config
-	```
 
 ## How to use
 Modify your `.eslintrc` file in your project to include the following code :
@@ -33,7 +29,9 @@ Modify your `.eslintrc` file in your project to include the following code :
 {
 	"extends": [
 		// ... your existing extends configuration
-		"@dirupt/eslint-config"
+		"@dirupt/eslint-config/recommended",
+		"@dirupt/eslint-config/typescript", // if you use TypeScript
+		"@dirupt/eslint-config/react", // if you use React
 	]
 }
 ```
