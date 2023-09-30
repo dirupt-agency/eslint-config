@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.9](https://git.shpv.work/website/front/-/compare/1.1.8...1.1.9) (2023-09-30)
+
+
+### 🐛 Bug Fixes
+
+* add typescript eslint config ([e83099f](https://git.shpv.work/website/front/-/commit/e83099f901c55439151d140a7a47d9424dc8f39b))
+
 ### [1.1.8](https://git.shpv.work/website/front/-/compare/1.1.7...1.1.8) (2023-09-30)
 
 
