@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.3](https://git.shpv.work/website/front/-/compare/1.1.2...1.1.3) (2023-09-30)
+
+
+### 🐛 Bug Fixes
+
+* **wip:** multi files ([b2addb7](https://git.shpv.work/website/front/-/commit/b2addb7ebe82e34dd00d1ec3a5669c85a4b89233))
+
 ### [1.1.2](https://git.shpv.work/website/front/-/compare/1.1.1...1.1.2) (2023-09-30)
 
 
