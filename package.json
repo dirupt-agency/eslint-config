@@ -1,7 +1,7 @@
 {
 	"name": "@dirupt/eslint-config",
 	"description": "ESLint config from DIRUPT team.",
-	"version": "1.1.8",
+	"version": "1.1.9",
 	"license": "MIT",
 	"private": false,
 	"main": "index.js",
@@ -68,6 +68,8 @@
 	},
 	"peerDependencies": {
 		"eslint": ">=8.0",
+		"@typescript-eslint/eslint-plugin": "^6.7.3",
+		"@typescript-eslint/parser": "^6.7.3",
 		"eslint-plugin-jsx-a11y": "^6.5.1",
 		"eslint-plugin-react": "^7.33.2",
 		"eslint-plugin-react-hooks": "^4.5.0",
