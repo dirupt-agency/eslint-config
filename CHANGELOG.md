@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.6](https://git.shpv.work/website/front/-/compare/1.1.5...1.1.6) (2023-09-30)
+
 ### [1.1.5](https://git.shpv.work/website/front/-/compare/1.1.3...1.1.5) (2023-09-30)
 
 
