@@ -44,6 +44,7 @@
 		"lint": "eslint ./ --ignore-path .gitignore",
 		"lint:fix": "npm run lint -- --fix",
 		"prepare": "husky install",
+		"publish": "npm publish --access public",
 		"release": "HUSKY=0 standard-version",
 		"release:minor": "HUSKY=0 standard-version --release-as minor",
 		"release:patch": "HUSKY=0 standard-version --release-as patch",
@@ -68,6 +69,9 @@
 	},
 	"peerDependencies": {
 		"eslint": ">=8.0",
+		"eslint-plugin-jsx-a11y": "^6.5.1",
+		"eslint-plugin-react": "^7.33.2",
+		"eslint-plugin-react-hooks": "^4.5.0",
 		"prettier": ">=3.0",
 		"typescript": ">=4.0"
 	},
