@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.8](https://git.shpv.work/website/front/-/compare/1.1.7...1.1.8) (2023-09-30)
+
+
+### 📝 Documentation
+
+* update README.md ([b7a8290](https://git.shpv.work/website/front/-/commit/b7a8290b7444b1a3942c8d260324fb0bff410e6e))
+
 ### [1.1.7](https://git.shpv.work/website/front/-/compare/1.1.6...1.1.7) (2023-09-30)
 
 
