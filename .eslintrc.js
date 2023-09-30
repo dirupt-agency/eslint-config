@@ -4,4 +4,4 @@
 | Author : Philippe DESPLATS (philippe@di-rupt.com)
 */
 
-module.exports = require('./index')
+module.exports = require('./lib/recommended')
