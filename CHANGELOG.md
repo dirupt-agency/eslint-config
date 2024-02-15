@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.10](https://git.shpv.work/website/front/-/compare/1.1.9...1.1.10) (2024-02-15)
+
+
+### ✨ Features
+
+* add material ui recommandation ([6f784de](https://git.shpv.work/website/front/-/commit/6f784de632ecb268105b71ed2d86e9e1cb763d79))
+
 ### [1.1.9](https://git.shpv.work/website/front/-/compare/1.1.8...1.1.9) (2023-09-30)
 
 
