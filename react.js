@@ -26,5 +26,11 @@ module.exports = {
 		'react/no-namespace': 'off',
 		'react/react-in-jsx-scope': 'off',
 		'react-hooks/exhaustive-deps': 'warn',
+		'no-restricted-imports': [
+			'error',
+			{
+				'patterns': ['@mui/*/*/*']
+			}
+		]
 	},
 }
