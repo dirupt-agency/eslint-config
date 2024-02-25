@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.11](https://git.shpv.work/website/front/-/compare/1.1.10...1.1.11) (2024-02-25)
+
+
+### ✨ Features
+
+* move a11y outside off react ([2c5a899](https://git.shpv.work/website/front/-/commit/2c5a8999dd1e3ab63a2a1d4e526d3475dfcfd600))
+
 ### [1.1.10](https://git.shpv.work/website/front/-/compare/1.1.9...1.1.10) (2024-02-15)
 
 
