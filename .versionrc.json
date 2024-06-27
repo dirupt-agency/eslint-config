@@ -40,6 +40,6 @@
 			"section": "✅ Testing"
 		}
 	],
-	"commitUrlFormat": "https://git.shpv.work/website/front/-/commit/{{hash}}",
-	"compareUrlFormat": "https://git.shpv.work/website/front/-/compare/{{previousTag}}...{{currentTag}}"
+	"commitUrlFormat": "https://gitlab.com/dirupt/internes/librairies/eslint-config/-/commit/{{hash}}",
+	"compareUrlFormat": "https://gitlab.com/dirupt/internes/librairies/eslint-config/-/compare/{{previousTag}}...{{currentTag}}"
 }
