@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.13](https://gitlab.com/dirupt/internes/librairies/eslint-config/-/compare/1.1.12...1.1.13) (2024-06-27)
+
+
+### ✨ Features
+
+* improved standard for TypeScript and updated dependencies ([d719534](https://gitlab.com/dirupt/internes/librairies/eslint-config/-/commit/d71953441d93f216dbbe77f7deaae59c7c17cebb))
+
 ### [1.1.12](https://git.shpv.work/website/front/-/compare/1.1.11...1.1.12) (2024-02-25)
 
 
