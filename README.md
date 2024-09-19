@@ -41,38 +41,6 @@ import { configAdonis } from '@dirupt/eslint-config'
 export default configApp(configAdonis())
 ```
 
-## Customization
-
-All configurations provided by `@dirupt/eslint-config` can be customized to fit your project's specific needs. You can extend or override the default rules for any of the provided configurations.
-
-Here's a generic example of how to customize the configuration:
-```js
-import { configTypeScript } from '@dirupt/eslint-config'
-import importPlugin from 'eslint-plugin-import'
-
-export default configTypeScript(
-	{
-		rules: {
-			// Your own rules
-		},
-	},
-	{
-		plugins: {
-			import: importPlugin,
-		},
-		rules: {
-			'import/order': [
-				'error',
-				{
-				groups: ['builtin', 'external', 'parent', 'sibling', 'index', 'internal', 'object'],
-				},
-			],
-		},
-	},
-)
-```
-
-
 ## Roadmap
 
 We are continuously working to improve and expand our ESLint configurations. Here's what you can expect in the near future:

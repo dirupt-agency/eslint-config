@@ -1,19 +1,14 @@
 {
 	"name": "@dirupt/eslint-config",
 	"description": "Dirupt's shared ESLint presets",
-	"version": "2.0.1",
+	"version": "2.0.8",
 	"license": "MIT",
 	"private": false,
 	"type": "module",
-	"main": "src/index.js",
-	"exports": {
-		".": "./src/index.js",
-		"./adonis": "./src/configs/adonis.js",
-		"./eslint-plugin-import": "./src/base/eslint-plugin-import.js",
-		"./eslint-plugin-unused-imports": "./src/base/eslint-plugin-unused-imports.js",
-		"./common": "./src/common.js",
-		"./package.json": "./package.json"
-	},
+	"main": "index.js",
+	"files": [
+		"index.js"
+	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/dirupt-agency/eslint-config.git"
@@ -41,31 +36,26 @@
 		"release": "release-it"
 	},
 	"peerDependencies": {
-		"@typescript-eslint/eslint-plugin": ">=8.6",
-		"@typescript-eslint/parser": ">=8.6",
-		"eslint": ">=9.0",
-		"eslint-config-prettier": ">=9.1",
-		"eslint-plugin-import": ">=2.30",
-		"eslint-plugin-jsx-a11y": ">=6.10",
-		"eslint-plugin-prettier": ">=5.2",
-		"eslint-plugin-react": ">=7.36",
-		"eslint-plugin-react-hooks": ">=4.5",
-		"eslint-plugin-unused-imports": ">=4.1",
-		"prettier": ">=3.0",
-		"typescript": ">=4.0"
+		"@typescript-eslint/eslint-plugin": ">=8",
+		"@typescript-eslint/parser": ">=8",
+		"eslint": ">=9",
+		"eslint-config-prettier": ">=9",
+		"eslint-plugin-jsx-a11y": ">=6",
+		"eslint-plugin-prettier": ">=5",
+		"eslint-plugin-react": ">=7",
+		"eslint-plugin-react-hooks": ">=4",
+		"prettier": ">=3",
+		"typescript": ">=5"
+	},
+	"dependencies": {
+		"eslint-plugin-import": "^2.30.0",
+		"eslint-plugin-unused-imports": "^4.1.4"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "19.5.0",
-		"@commitlint/config-conventional": "19.5.0",
 		"@release-it/conventional-changelog": "^8.0.2",
-		"commitizen": "4.3.0",
-		"cz-conventional-changelog": "3.3.0",
 		"eslint": "^9.10.0",
-		"husky": "9.1.6",
-		"lint-staged": "15.2.10",
 		"prettier": "^3.3.3",
 		"release-it": "^17.6.0",
-		"standard-version": "9.5.0",
 		"typescript": "5.6.2"
 	},
 	"release-it": {
