@@ -4,46 +4,38 @@
 | Author : Philippe DESPLATS (philippe@dirupt.com)
 */
 
-import importPlugin from "eslint-plugin-import";
+import importPlugin from 'eslint-plugin-import'
 
 /**
  * Object containing the plugin
  */
 export const pluginImport = {
 	import: importPlugin,
-};
+}
 
 /**
  * Object containing the rules
  */
 export const rulesImport = {
-	"no-unused-vars": "off",
-	"import/order": [
-		"error",
+	'no-unused-vars': 'off',
+	'import/order': [
+		'error',
 		{
-			groups: [
-				"builtin",
-				"external",
-				"parent",
-				"sibling",
-				"index",
-				"internal",
-				"object",
-			],
+			groups: ['builtin', 'external', 'parent', 'sibling', 'index', 'internal', 'object'],
 		},
 	],
-	"import/extensions": [
-		"error",
+	'import/extensions': [
+		'error',
 		{
-			js: "never",
-			jsx: "never",
-			svg: "always",
-			ts: "never",
-			tsx: "never",
+			js: 'never',
+			jsx: 'never',
+			svg: 'always',
+			ts: 'never',
+			tsx: 'never',
 		},
 	],
-	"import/prefer-default-export": "off",
-};
+	'import/prefer-default-export': 'off',
+}
 
 /**
  * ESLint configuration for import plugin :
@@ -56,4 +48,4 @@ export default {
 		import: pluginImport,
 	},
 	rules: rulesImport,
-};
+}

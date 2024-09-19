@@ -1,98 +1,93 @@
-# Dirupt - Code Standard for Typescript and React project
+# DIRUPT ESLint Config - For ESLint 9
 
-## How to install
-You need ESLint and Prettier installed as development dependencies on your project. You can install them by using npm or yarn.
+<br />
 
-### NPM
-1. Install ESLint and Prettier :
-	```bash
-	$ npm install --save-dev @dirupt/eslint-config
-	```
-2. Install all peer dependencies (npm > v5) :
-	```bash
-	$ npx install-peerdeps --dev @dirupt/eslint-config
-	```
+<div align="center">
+  <h3>ESLint presets used by the DIRUPT core team</h3>
+  <p>
+    DIRUPT ESLint Config provides a set of carefully curated ESLint rules and configurations to ensure consistent code style and quality across projects. This package encapsulates the best practices and coding standards used by the DIRUPT core team, helping developers write clean, maintainable, and error-free JavaScript and TypeScript code.
+  </p>
+</div>
 
-### Yarn
-1. Install ESLint and Prettier :
-   ```bash
-   $ yarn add -D @dirupt/eslint-config
-   ```
-2. Install all peer dependencies (npm > v5) :
-   ```bash
-   $ npx install-peerdeps --dev @dirupt/eslint-config
-   ```
+<br />
 
-## How to use
-Modify your `.eslintrc` file in your project to include the following code :
-```json5
-{
-	"extends": [
-		// ... your existing extends configuration
-		"@dirupt/eslint-config/recommended",
-		"@dirupt/eslint-config/typescript", // if you use TypeScript
-		"@dirupt/eslint-config/react", // if you use React
-	]
-}
+<div align="center">
+
+[![license-image]][license-url] [![npm-image]][npm-url]
+
+</div>
+
+## Installation
+
+Install the package from the npm registry.
+
+```sh
+pnpm add -D @dirupt/eslint-config
+
+# Make sure also to install the following packages
+pnpm add -D eslint@9 prettier@3
 ```
 
-## With VS Code
+## Usage
 
-You should read this entire thing. Serious!
+After installation, use one of the following presets depending on the nature of your application/library/project.
 
-Once you have done one, or both, of the above installs. You probably want your editor to lint and fix for you. Here are the instructions for VS Code:
+**For AdonisJS:**
+```js
+// eslint.config.{js,mjs,ts}
+import { configApp } from '@adonisjs/eslint-config'
+import { configAdonis } from '@dirupt/eslint-config'
 
-1. Install the [ESLint package](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-2. Now we need to setup some VS Code settings via `Code/File` → `Preferences` → `Settings`. It's easier to enter these settings while editing the `settings.json` file, so click the Open (Open Settings) icon in the top right corner:
-```
-{
-  // These are all my auto-save configs
-  "editor.formatOnSave": true,
-  // turn it off for JS and JSX, we will do this via eslint
-  "[javascript]": {
-	"editor.formatOnSave": false
-  },
-  "[javascriptreact]": {
-	"editor.formatOnSave": false
-  },
-  // show eslint icon at bottom toolbar
-  "eslint.alwaysShowStatus": true,
-  // tell the ESLint plugin to run on save
-  "editor.codeActionsOnSave": {
-	"source.fixAll": true
-  }
-}
+export default configApp(configAdonis())
 ```
 
-After attempting to lint your file for the first time, you may need to click on 'ESLint' in the bottom right and select 'Allow Everywhere' in the alert window.
+## Customization
 
-Finally you'll usually need to restart VS code. They say you don't need to, but it's never worked for me until I restart.
+All configurations provided by `@dirupt/eslint-config` can be customized to fit your project's specific needs. You can extend or override the default rules for any of the provided configurations.
 
-## With JetBrains Products (IntelliJ IDEA, WebStorm, RubyMine, PyCharm, PhpStorm, etc)
+Here's a generic example of how to customize the configuration:
+```js
+import { configTypeScript } from '@dirupt/eslint-config'
+import importPlugin from 'eslint-plugin-import'
 
-If you have previously configured ESLint to run via a File Watcher, [turn that off.](https://www.jetbrains.com/help/idea/using-file-watchers.html#enableFileWatcher)
+export default configTypeScript(
+	{
+		rules: {
+			// Your own rules
+		},
+	},
+	{
+		plugins: {
+			import: importPlugin,
+		},
+		rules: {
+			'import/order': [
+				'error',
+				{
+				groups: ['builtin', 'external', 'parent', 'sibling', 'index', 'internal', 'object'],
+				},
+			],
+		},
+	},
+)
+```
 
-### If you choose Local / Per Project Install Above
-1. Open ESLint configuration by going to File > Settings (Edit > Preferences on Mac) > Languages & Frameworks > Code Quality Tools > ESLint (optionally just search settings for "eslint")
-1. Select **Automatic ESLint Configuration**
-1. Check **Run eslint --fix on save**
 
-### Ensure the Prettier plugin is disabled if installed.
+## Roadmap
 
-1. Open Prettier configuration by going to File > Settings (Edit > Preferences on Mac) > Languages & Frameworks > Code Quality Tools > Prettier (optionally just search settings for "prettier")
-1. Uncheck both **On code reformat** and **On save**
-1. *Optional BUT IMPORTANT:* If you have the Prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through Eslint already.
-	1. Make sure the **Run for files** glob does not include `js,ts,jsx,tsx`.
-	2. An example glob for styles, config, and markdown. `{**/*,*}.{yml,css,sass,md}`
+We are continuously working to improve and expand our ESLint configurations. Here's what you can expect in the near future:
 
-## License
+- [ ] Add preset for React
+- [ ] Add preset for TypeScript
+- [ ] Add Recommended preset
 
-Copyright © 2023 [Dirupt](https://www.di-rupt.com/?utm_source=github). This library is licensed under the MIT [license](/LICENCE).
+These upcoming presets will provide tailored linting configurations for React and TypeScript projects, as well as a recommended configuration that combines best practices for general JavaScript development. Stay tuned for updates!
 
-## Authors
+<div align="center">
+  <sub>Built with ❤︎ by <a href="https://github.com/philippe-desplats">Philippe Desplats</a> - File based on <a href="https://github.com/adonisjs/eslint-config">AdonisJS Prettier Config</a></sub>
+</div>
 
-- Philippe DESPLATS [philippe@di-rupt.com](mailto:philippe@di-rupt.com)
-
-## Support
-
-For support, email [support@di-rupt.com](mailto:support@di-rupt.com).
+[npm-image]: https://img.shields.io/npm/v/@dirupt/eslint-config/latest.svg?style=for-the-badge&logo=npm
+[npm-url]: https://www.npmjs.com/package/@dirupt/eslint-config/v/latest 'npm'
+[license-url]: LICENSE.md
+[license-image]: https://img.shields.io/github/license/dirupt-agency/eslint-config?style=for-the-badge
