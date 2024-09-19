@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://gitlab.com/dirupt/internes/librairies/eslint-config/-/compare/1.1.13...2.0.0) (2024-09-19)
+
+
+### ✨ Features
+
+* prepare new version for eslint 9 ([9712fea](https://gitlab.com/dirupt/internes/librairies/eslint-config/-/commit/9712feab48931a72886e52371d34de3b90be9694))
+
 ### [1.1.13](https://gitlab.com/dirupt/internes/librairies/eslint-config/-/compare/1.1.12...1.1.13) (2024-06-27)
 
 
