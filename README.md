@@ -52,7 +52,7 @@ We are continuously working to improve and expand our ESLint configurations. Her
 These upcoming presets will provide tailored linting configurations for React and TypeScript projects, as well as a recommended configuration that combines best practices for general JavaScript development. Stay tuned for updates!
 
 <div align="center">
-  <sub>Built with ❤︎ by <a href="https://github.com/philippe-desplats">Philippe Desplats</a> - File based on <a href="https://github.com/adonisjs/eslint-config">AdonisJS Prettier Config</a></sub>
+  <sub>Built with ❤︎ by <a href="https://github.com/philippe-desplats">Philippe Desplats</a> - Project based on <a href="https://github.com/adonisjs/eslint-config">AdonisJS Prettier Config</a></sub>
 </div>
 
 [npm-image]: https://img.shields.io/npm/v/@dirupt/eslint-config/latest.svg?style=for-the-badge&logo=npm
