@@ -32,7 +32,7 @@ pnpm add -D eslint@9 prettier@3
 
 After installation, use one of the following presets depending on the nature of your application/library/project.
 
-**For AdonisJS:**
+### For AdonisJS
 ```js
 // eslint.config.{js,mjs,ts}
 import { configApp } from '@adonisjs/eslint-config'
@@ -41,15 +41,60 @@ import { configAdonis } from '@dirupt/eslint-config'
 export default configApp(configAdonis())
 ```
 
-## Roadmap
+### For React
+```js
+// eslint.config.{js,mjs,ts}
+import { configReact } from '@dirupt/eslint-config'
 
-We are continuously working to improve and expand our ESLint configurations. Here's what you can expect in the near future:
+export default configReact()
+```
 
-- [ ] Add preset for React
-- [ ] Add preset for TypeScript
-- [ ] Add Recommended preset
+### For TypeScript
+```js
+// eslint.config.{js,mjs,ts}
+import { configTypescript } from '@dirupt/eslint-config'
 
-These upcoming presets will provide tailored linting configurations for React and TypeScript projects, as well as a recommended configuration that combines best practices for general JavaScript development. Stay tuned for updates!
+export default configTypescript()
+```
+
+### For Recommended
+```js
+// eslint.config.{js,mjs,ts}
+import { configRecommanded } from '@dirupt/eslint-config'
+
+export default configRecommanded()
+```
+
+### Combining Configurations:
+
+You can combine multiple configurations. For example:
+```js
+// eslint.config.{js,mjs,ts}
+import { configTypescript, configRecommanded, configReact } from '@dirupt/eslint-config'
+
+export default configTypescript(configRecommanded(configReact()))
+```
+
+## Available Configurations
+
+- `configAdonis()`: Configuration for AdonisJS projects
+- `configReact()`: Configuration for React projects
+- `configTypescript()`: Configuration for TypeScript projects
+- `configRecommanded()`: Recommended configuration for general JavaScript/TypeScript projects
+
+Each configuration can be customized by passing additional options or rules.
+
+## Plugins and Rules
+
+This package includes several plugins and predefined rules:
+
+- Import plugin and rules
+- Unused imports plugin and rules
+- Prettier plugin and rules
+- TypeScript-specific rules (when using `configTypescript`)
+- React-specific rules (when using `configReact`)
+
+For detailed information about the rules and plugins, please refer to the source code or documentation of each specific configuration.
 
 <div align="center">
   <sub>Built with ❤︎ by <a href="https://github.com/philippe-desplats">Philippe Desplats</a> - Project based on <a href="https://github.com/adonisjs/eslint-config">AdonisJS Prettier Config</a></sub>
