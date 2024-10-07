@@ -25,6 +25,7 @@ export function configAdonis() {
 		rules: {
 			...rulesImport,
 			...rulesUnusedImports,
+			'import/extensions': 'off',
 		},
 	}
 }
