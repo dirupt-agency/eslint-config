@@ -4,8 +4,11 @@
 | Author : Philippe DESPLATS (philippe@dirupt.com)
 */
 
-import { pluginImport, rulesImport } from '../plugins/import.js'
-import { pluginUnusedImports, rulesUnusedImports } from '../plugins/unused-imports.js'
+import { pluginImport, rulesImport } from "../plugins/import.js";
+import {
+	pluginUnusedImports,
+	rulesUnusedImports,
+} from "../plugins/unused-imports.js";
 
 /**
  * ESLint configuration for AdonisJS, please add in your eslint.config.js :
@@ -23,9 +26,13 @@ export function configAdonis() {
 			...pluginUnusedImports,
 		},
 		rules: {
-			...rulesImport,
 			...rulesUnusedImports,
-			'import/extensions': 'off',
+			...Object.fromEntries(
+				Object.entries(rulesImport).filter(
+					([key]) => key !== "import/extensions",
+				),
+			),
+			"import/extensions": "off",
 		},
-	}
+	};
 }
