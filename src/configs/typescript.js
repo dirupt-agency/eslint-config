@@ -86,7 +86,7 @@ export const rulesTypescript = {
  */
 export function configTypescript(...extendsConfig) {
 	return tseslint.config(
-		tseslint.configs.recommended,
+		...tseslint.configs.recommended,
 		{
 			plugins: pluginsTypescript,
 			rules: rulesTypescript,
