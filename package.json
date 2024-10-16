@@ -1,7 +1,7 @@
 {
 	"name": "@dirupt/eslint-config",
 	"description": "Dirupt's shared ESLint presets",
-	"version": "2.2.2",
+	"version": "2.2.3",
 	"license": "MIT",
 	"private": false,
 	"type": "module",
@@ -38,24 +38,24 @@
 	},
 	"peerDependencies": {
 		"eslint": "^9.10.0",
-		"eslint-plugin-react": "^7.36.1",
-		"eslint-plugin-react-hooks": "^4.6.2",
+		"eslint-plugin-react": "^7.37.1",
+		"eslint-plugin-react-hooks": "^5.0.0",
 		"prettier": ">=3"
 	},
 	"dependencies": {
-		"@eslint/js": "^9.10.0",
-		"@typescript-eslint/eslint-plugin": "^8.6.0",
-		"@typescript-eslint/parser": "^8.6.0",
-		"eslint-plugin-import": "^2.30.0",
+		"@eslint/js": "^9.12.0",
+		"@typescript-eslint/eslint-plugin": "^8.9.0",
+		"@typescript-eslint/parser": "^8.9.0",
+		"eslint-plugin-import": "^2.31.0",
 		"eslint-plugin-prettier": "^5.2.1",
 		"eslint-plugin-unused-imports": "^4.1.4",
-		"typescript-eslint": "^8.6.0"
+		"typescript-eslint": "^8.9.0"
 	},
 	"devDependencies": {
-		"@release-it/conventional-changelog": "^8.0.2",
-		"eslint": "^9.10.0",
+		"@release-it/conventional-changelog": "^9.0.0",
+		"eslint": "^9.12.0",
 		"prettier": "^3.3.3",
-		"release-it": "^17.6.0"
+		"release-it": "^17.10.0"
 	},
 	"release-it": {
 		"git": {

@@ -20,7 +20,7 @@ export const filesReact = ['**/*.{js,jsx,ts,tsx}']
  */
 export const pluginsReact = {
 	react,
-	reactHooks,
+	'react-hooks': reactHooks,
 	...pluginsRecommanded,
 }
 
@@ -28,6 +28,7 @@ export const pluginsReact = {
  * Object containing the rules
  */
 export const rulesReact = {
+	...reactHooks.configs.recommended.rules,
 	'react/jsx-props-no-spreading': 'off',
 	'react/no-children-prop': ['warn'],
 	'react/jsx-no-leaked-render': ['warn', { validStrategies: ['ternary'] }],
